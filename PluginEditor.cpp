@@ -31,8 +31,7 @@ void AudioPluginAudioProcessorEditor::paint (juce::Graphics& g)
 
     py::scoped_interpreter guard{};
 
-    py::print("Python is running");
-
+    //py::print("Python is running");
     py::module_ calc = py::module_::import("calc");
     py::object result = calc.attr("add")(1, 2);
     int n = result.cast<int>();

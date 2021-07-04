@@ -1,9 +1,8 @@
 cmake_minimum_required(VERSION 3.4)
 
+project(juce-python VERSION 0.1.0)
 add_subdirectory(pybind11)
 add_subdirectory(JUCE)
-
-project(juce-python VERSION 0.1.0)
 
 juce_add_plugin(JucePythonExamplePlugin
     # VERSION ...                               # Set this if the plugin version is different to the project version
